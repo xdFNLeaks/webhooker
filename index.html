@@ -16,7 +16,8 @@
         <label for="webhookUrl">Webhook URL:</label>
         <input type="text" id="webhookUrl" placeholder="Enter your Discord webhook URL">
         <label for="message">Message:</label>
-        <textarea id="message" placeholder="Type your message here"></textarea>
+        <textarea id="message" placeholder="Type your message here" oninput="updateCharCount()" style="resize: none;"></textarea>
+        <span id="charCount" class="char-count">0/2000</span>
         <button onclick="sendMessage()">Send Message</button>
         <div id="response"></div>
     </div>
