@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -10,74 +10,80 @@ body {
 }
 
 body.dark-mode {
-    background-color: #292b2c;
+    background-color: #121212;
     color: #fff;
 }
 
 .dark-mode-toggle {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
 }
 
 .icon {
     font-size: 24px;
-    color: #000;
+    color: #2196F3;
 }
 
 body.dark-mode .icon {
-    color: #fff;
+    color: #BB86FC;
 }
 
 .container {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
     text-align: center;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 body.dark-mode .container {
-    background-color: #313030;
+    background-color: #1E1E1E;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
+    color: #2196F3;
 }
 
 input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    width: calc(100% - 16px);
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     box-sizing: border-box;
+    border: 2px solid #2196F3;
+    border-radius: 8px;
+    outline: none;
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #2196F3;
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 body.dark-mode button {
-    background-color: #45a049;
+    background-color: #BB86FC;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #1565C0;
 }
 
 #response {
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: bold;
     color: #333;
 }
@@ -88,9 +94,9 @@ body.dark-mode #response {
 
 .char-count {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     color: #555;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 body.dark-mode .char-count {
